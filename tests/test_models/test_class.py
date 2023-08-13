@@ -2,6 +2,7 @@
 """Module for test classes"""
 import inspect
 import pep8
+import unittest
 
 
 class TestClassDocumentation():
@@ -35,6 +36,7 @@ class TestClassDocumentation():
         result = pep8style.check_files(files)
         self.tests.assertEqual(result.total_errors, 0,
                                'Found code style errors (and warnings)."')
+
 
 if __name__ == '__main__':
     unittest.main()
